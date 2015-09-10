@@ -3,7 +3,7 @@ from random import choice
 def insult():
     return "Thou " + generate_insult() + "!"
 
-def named_insult():
+def named_insult(name):
     return name + ", thou " + generate_insult() + "!"
 
 def generate_insult():
