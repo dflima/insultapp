@@ -1,12 +1,17 @@
 import os
 from flask import Flask
+import insulter
 
 app = Flask(__name__)
 app.config['PROPAGATE_EXCEPTIONS'] = True
 
 @app.route("/")
 def insult():
-    return "Hello, code monkey!"
+    return insulter.insult()
+
+@app.route("/<name>")
+def insult_name(name):
+    return insulter.named_insult(name)
 
 if __name__ == "__main__":
     app.run()
