@@ -2,7 +2,7 @@
 Provides the controller logic for the insultapp.
 """
 
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpRequest, HttpResponse  # pylint: disable=import-error
 
 from insultapp import insulter
 
