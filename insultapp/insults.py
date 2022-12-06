@@ -1,3 +1,7 @@
+"""
+List of insults to be used by insulter.py
+"""
+
 first_adjective_list = [
     "artless",
     "bawdy",
