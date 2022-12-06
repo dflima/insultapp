@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from insultapp import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('insult/<str:name>/', views.insult_name, name='insult_name'),
+    path('insult/', views.insult, name='insult'),
 ]
